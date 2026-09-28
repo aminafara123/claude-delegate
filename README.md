@@ -18,17 +18,22 @@ Claude Code meters its top tier models with tight weekly usage limits. If your b
 |---|---|
 | `agents/opus-worker.md` | A generic worker agent pinned to `model: opus`. Any session can hand it a self-contained task |
 | `rules/delegation.md` | A delegation rule appended to `~/.claude/CLAUDE.md` once. It tells the orchestrator to route heavy work to Opus subagents |
-| `bin/opus` | The `opus` terminal command. No args opens an interactive Opus session, args become a one shot prompt |
+| `opus.js` | The `opus` terminal command. No args opens an interactive Opus session, args become a one shot prompt |
 
 ## Quick start
 
 ```bash
-git clone https://github.com/aminafara123/claude-delegate
-cd claude-delegate
-./install.sh
+npx claude-delegate
 ```
 
-Thats it. New Claude Code sessions pick up the rule on start. Run `./test.sh` if you want to check the pieces.
+Thats the whole install: the agent and the rule are in place and new Claude Code sessions pick them up on start. For the `opus` terminal command too, install globally instead:
+
+```bash
+npm i -g claude-delegate
+claude-delegate
+```
+
+Prefer reading before running? Clone the repo and run `node install.js`, it does exactly the same thing, and `./test.sh` checks the pieces.
 
 From the terminal:
 

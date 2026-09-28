@@ -1,0 +1,38 @@
+{
+  "name": "claude-delegate",
+  "version": "1.0.0",
+  "description": "Save your Claude Code weekly limit: route heavy work to Opus subagents automatically, with an opus command for the terminal",
+  "bin": {
+    "claude-delegate": "install.js",
+    "opus": "opus.js"
+  },
+  "scripts": {
+    "test": "./test.sh"
+  },
+  "files": [
+    "install.js",
+    "opus.js",
+    "agents/",
+    "rules/"
+  ],
+  "keywords": [
+    "claude-code",
+    "claude",
+    "opus",
+    "subagents",
+    "delegation",
+    "token-usage",
+    "weekly-limit",
+    "cli"
+  ],
+  "author": "Al Amin Bashir Afara",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aminafara123/claude-delegate.git"
+  },
+  "homepage": "https://github.com/aminafara123/claude-delegate#readme",
+  "engines": {
+    "node": ">=18"
+  }
+}
