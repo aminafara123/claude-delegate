@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Run Opus from any console. No args: interactive session. With args:
+# everything becomes one headless prompt and the answer prints to stdout.
+if [ $# -eq 0 ]; then
+  exec claude --model opus
+fi
+exec claude --model opus -p "$*"
