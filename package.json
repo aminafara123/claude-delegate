@@ -1,6 +1,6 @@
 {
   "name": "claude-delegate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Save your Claude Code weekly limit: route heavy work to Opus subagents automatically, with an opus command for the terminal",
   "bin": {
     "claude-delegate": "install.js",

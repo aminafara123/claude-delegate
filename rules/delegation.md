@@ -7,5 +7,10 @@ either the opus-worker agent or a fitting specialist agent with the model
 override set to opus. Keep orchestration, review and the final report in
 the main session.
 
+A specialist agent set to model inherit is a trap: it runs on the
+orchestrator's model, so delegating to one without the override leaves
+the heavy work on the weak model. Pin it to opus or pass the override
+explicitly.
+
 Skip delegation when the task is a two minute edit, or when it depends on
 conversation context that cannot be summarized in a short prompt.
